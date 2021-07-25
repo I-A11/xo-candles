@@ -91,9 +91,10 @@ a {
   font-size: 3.5rem;
   text-align: center;
   font-weight: 400;
-  padding: 160px 20px 30px;
+  padding: 50px 20px 30px;
   letter-spacing: 2px;
   color: #8b942e;
+  font-family: "Dancing Script", cursive;
 }
 
 .hero p {
@@ -110,9 +111,16 @@ a {
 }
 
 .hero .col-2 {
-  flex-basis: 30%;
+  flex-basis: 40%;
   min-width: 350px;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.col-2 img {
+  width: 300px;
+  height: auto;
+  margin-top: 100px;
+  border-radius: 20px;
 }
