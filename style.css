@@ -22,7 +22,7 @@ a {
 
 /* header */
 .nav {
-  background: #3d3535;
+  background: #141414;
 }
 .logo-container {
   display: flex;
@@ -49,7 +49,7 @@ a {
 .toggle {
   font-size: 1.5rem;
   color: #adb83e;
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 .links {
@@ -89,10 +89,10 @@ a {
   }
 }
 
-section {
-  width: 100%;
-  /* height: 450px; */
-  background: #d4cfcf;
+/* hero section */
+.hero {
+  display: flex;
+  background: #d4cbcb;
 }
 
 .hero h1 {
@@ -112,17 +112,14 @@ section {
 }
 
 .row {
-  height: 700px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 70px;
 }
 
 .hero .col-2 {
   flex-basis: 40%;
-  min-width: 350px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -131,108 +128,67 @@ section {
 .col-2 img {
   width: 500px;
   height: auto;
-  margin-top: 100px;
+  margin: 100px 0 30px;
   border-radius: 20px;
 }
-
-/* hero section 1200px display */
-
-@media screen and (max-width: 1200px) {
+/* hero section 1160px */
+@media screen and (max-width: 1160px) {
   .hero .col-2 {
-    flex-basis: 90%;
+    flex-basis: 80%;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-
+}
+/* hero section 550px */
+@media screen and (max-width: 550px) {
   .col-2 img {
-    width: 600px;
+    width: 400px;
     height: auto;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-  }
-  .row {
-    height: 900px;
   }
 }
 
-/* hero section 760px display */
-
-@media screen and (max-width: 760px) {
-  .hero h1 {
-    font-size: 3rem;
-  }
-
-  .hero p {
-    font-size: 1.3rem;
-    line-height: 2rem;
-  }
-
-  .col-2 img {
-    width: 450px;
-  }
-  .row {
-    height: 800px;
-  }
-}
-
-/* hero section 500px display */
-
-@media screen and (max-width: 500px) {
-  .hero h1 {
-    font-size: 2.8rem;
-  }
-
-  .hero p {
-    font-size: 1.1rem;
-  }
-
+/* hero section 450px */
+@media screen and (max-width: 450px) {
   .col-2 img {
     width: 300px;
-  }
-  .row {
-    height: 650px;
+    height: auto;
   }
 }
+/* products container section */
 
 .products-container {
-  background: white;
-  margin: auto;
-  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .products-container h1 {
   font-size: 3.5rem;
   text-align: center;
   font-weight: 400;
-  padding-top: 50px;
+  padding: 60px;
   letter-spacing: 2px;
   color: #8b942e;
 }
 
 .products-container .row {
   display: flex;
-  /* flex-wrap: wrap; */
-  align-items: center;
-  justify-content: space-between;
-}
-.products-container .col-3 {
-  flex-basis: 30%;
-  min-width: 200px;
-  transition: transform 0.5s;
+  flex-wrap: wrap;
 }
 
-.products-container img {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-  padding: 15px;
-  cursor: pointer;
+.products-container .col-3 {
+  flex-basis: 22%;
+  transition: transform 0.5s;
 }
 
 .products-container .col-3:hover {
   transform: translateY(-10px);
+}
+
+.products-container img {
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .products-container p {
@@ -241,42 +197,42 @@ section {
   color: #535151;
 }
 
-/* prodect section 1200px */
-@media screen and (max-width: 1200px) {
-  .products-container .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
+/* product section width 900px */
 
+@media screen and (max-width: 900px) {
   .products-container .col-3 {
-    flex-basis: 50%;
-  }
-
-  .products-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    padding: 15px;
+    flex-basis: 70%;
   }
 }
 
-/* prodect section 800px */
-@media screen and (max-width: 800px) {
-  .products-container .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+/* footer */
+footer {
+  height: 300px;
+  background: #141414;
+  margin-top: 50px;
+  text-align: center;
+  color: #adb83e;
+}
+
+footer h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  padding: 30px 0 20px;
+}
+
+footer p {
+  font-size: 1.5rem;
+  padding: 15px;
+}
+
+/* footer 450px width */
+
+@media screen and (max-width: 450px) {
+  footer h1 {
+    font-size: 2.5rem;
   }
 
-  .products-container .col-3 {
-    flex-basis: 100%;
-  }
-
-  .products-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    padding: 15px;
+  footer p {
+    font-size: 1.2rem;
   }
 }
